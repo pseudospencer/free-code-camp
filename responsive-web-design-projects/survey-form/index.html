@@ -5,94 +5,95 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">What kind of music do you like?</h1>
-    <main>
-        <p id="description">This is a quick survey to determine music preferences</p>
-        <form id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" name="name" placeholder="ex: John Smith">
-            <br>
+<h1 id="title">What kind of music do you like?</h1>
+<main>
+    <p id="description">This is a quick survey to determine music preferences</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="ex: John Smith">
+        <br>
 
-            <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" name="email" placeholder="ex: coolkid@gmail.com">
-            <br>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="ex: coolkid@gmail.com">
+        <br>
 
-            <label for="number" id="number-label">Number of hours of music listened to each week</label>
-            <input type="number" id="number" name="number" placeholder="ex: 10" min="0" max = "100">
-            <br>
+        <label for="number" id="number-label">Number of hours of music listened to each week</label>
+        <input type="number" id="number" name="number" placeholder="ex: 10" min="0" max = "100">
+        <br>
 
-            <label for="dropdown">Favorite genre</label>
-            <select class="" name="dropdown" id="dropdown">
-                <option value="Rock N Roll">Rock N Roll</option>
-                <option value="Blues">Blues</option>
-                <option value="Metal">Metal</option>
-                <option value="Hip Hop">Hip Hop</option>
-                <option value="R & B">R & B</option>
-                <option value="Soul">Soul</option>
-                <option value="Pop">Pop</option>
-                <option value="Funk">Funk</option>
-                <option value="Folk">Folk</option>
-                <option value="Country">Country</option>
-                <option value="Electronic">Electronic</option>
-                <option value="Reggae">Reggae</option>
-                <option value="Other">Other</option>
-            </select>
-            <br>
+        <fieldset>
+            <legend>Your favorite way to listen to music</legend>
+            <input type="radio" name="favorite" id="favoriteChoice1" value="headphones">
+            <label for="favoriteChoice1">Headphones</label>
+            <input type="radio" name="favorite" id="favoriteChoice2" value="radio">
+            <label for="favoriteChoice2">Radio</label>
+            <input type="radio" name="favorite" id="favoriteChoice3" value="shower">
+            <label for="favoriteChoice3">In the shower</label>
+            <input type="radio" name="favorite" id="favoriteChoice4" value="live">
+            <label for="favoriteChoice4">Live</label>
+            <input type="radio" name="favorite" id="favoriteChoice5" value="computer">
+            <label for="favoriteChoice5">Computer</label>
+            <input type="radio" name="favorite" id="favoriteChoice6" value="phone">
+            <label for="favoriteChoice6">Phone</label>
+        </fieldset>
+        <br>
 
-            <fieldset>
-                <legend>Your favorite way to listen to music</legend>
-                <input type="radio" name="favorite" id="favoriteChoice1" value="headphones">
-                <label for="favoriteChoice1">Headphones</label>
-                <input type="radio" name="favorite" id="favoriteChoice2" value="radio">
-                <label for="favoriteChoice2">Radio</label>
-                <input type="radio" name="favorite" id="favoriteChoice3" value="shower">
-                <label for="favoriteChoice3">In the shower</label>
-                <input type="radio" name="favorite" id="favoriteChoice4" value="live">
-                <label for="favoriteChoice4">Live</label>
-                <input type="radio" name="favorite" id="favoriteChoice5" value="computer">
-                <label for="favoriteChoice5">Computer</label>
-                <input type="radio" name="favorite" id="favoriteChoice6" value="phone">
-                <label for="favoriteChoice6">Phone</label>
-            </fieldset>
-            <br>
+        <label for="dropdown">Favorite genre</label>
+        <select class="" name="dropdown" id="dropdown">
+            <option value="Rock N Roll">Rock N Roll</option>
+            <option value="Blues">Blues</option>
+            <option value="Metal">Metal</option>
+            <option value="Hip Hop">Hip Hop</option>
+            <option value="R & B">R & B</option>
+            <option value="Soul">Soul</option>
+            <option value="Pop">Pop</option>
+            <option value="Funk">Funk</option>
+            <option value="Folk">Folk</option>
+            <option value="Country">Country</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Other">Other</option>
+        </select>
+        <br>
 
-            <!-- checkboxes -->
-            <fieldset>
-                <legend>Genres that you like</legend>
-                <input type="checkbox" name="liked" value="Rock N Roll" id="likedChoice1">
-                <label for="likedChoice1">Rock N Roll</label>
-                <input type="checkbox" name="liked" value="Blues" id="likedChoice2">
-                <label for="likedChoice2">Blues</label>
-                <input type="checkbox" name="liked" id="likedChoice3" value="Metal">
-                <label for="likedChoice3">Metal</label>
-                <input type="checkbox" name="liked" id="likedChoice4" value="Hip Hop">
-                <label for="likedChoice4">Hip Hop</label>
-                <input type="checkbox" name="liked" id="likedChoice5" value="R & B">
-                <label for="likedChoice5">R & B</label>
-                <input type="checkbox" name="liked" id="likedChoice6" value="Soul">
-                <label for="likedChoice6">Soul</label>
-                <input type="checkbox" name="liked" id="likedChoice7" value="Pop">
-                <label for="likedChoice7">Pop</label>
-                <input type="checkbox" name="liked" id="likedChoice3" value="Funk">
-                <label for="likedChoice8">Funk</label>
-                <input type="checkbox" name="liked" id="likedChoice9" value="Folk">
-                <label for="likedChoice9">Folk</label>
-                <input type="checkbox" name="liked" id="likedChoice10" value="Country">
-                <label for="likedChoice10">Country</label>
-                <input type="checkbox" name="liked" id="likedChoice11" value="Electronic">
-                <label for="likedChoice11">Electronic</label>
-                <input type="checkbox" name="liked" id="likedChoice12" value="Reggae">
-                <label for="likedChoice=12">Reggae</label>
-            </fieldset>
+        <!-- checkboxes -->
+        <fieldset>
+            <legend>Genres that you like</legend>
+            <input type="checkbox" name="liked" value="Rock N Roll" id="likedChoice1">
+            <label for="likedChoice1">Rock N Roll</label>
+            <input type="checkbox" name="liked" value="Blues" id="likedChoice2">
+            <label for="likedChoice2">Blues</label>
+            <input type="checkbox" name="liked" id="likedChoice3" value="Metal">
+            <label for="likedChoice3">Metal</label>
+            <input type="checkbox" name="liked" id="likedChoice4" value="Hip Hop">
+            <label for="likedChoice4">Hip Hop</label>
+            <input type="checkbox" name="liked" id="likedChoice5" value="R & B">
+            <label for="likedChoice5">R & B</label>
+            <input type="checkbox" name="liked" id="likedChoice6" value="Soul">
+            <label for="likedChoice6">Soul</label>
+            <input type="checkbox" name="liked" id="likedChoice7" value="Pop">
+            <label for="likedChoice7">Pop</label>
+            <input type="checkbox" name="liked" id="likedChoice3" value="Funk">
+            <label for="likedChoice8">Funk</label>
+            <input type="checkbox" name="liked" id="likedChoice9" value="Folk">
+            <label for="likedChoice9">Folk</label>
+            <input type="checkbox" name="liked" id="likedChoice10" value="Country">
+            <label for="likedChoice10">Country</label>
+            <input type="checkbox" name="liked" id="likedChoice11" value="Electronic">
+            <label for="likedChoice11">Electronic</label>
+            <input type="checkbox" name="liked" id="likedChoice12" value="Reggae">
+            <label for="likedChoice=12">Reggae</label>
+        </fieldset>
+        <br>
 
-            <label for="favorite musicians">List your favorite musicians</label>
-            <input type="textarea" rows="8" cols="80" name="favorite musicians" placeholder="ex: Tupac, Kilo Riley, etc.">
-            <br>
+        <label for="favorite musicians">List your favorite musicians</label>
+        <input type="textarea" rows="8" cols="80" name="favorite musicians" placeholder="ex: Tupac, Kilo Riley, etc.">
+        <br>
 
-            <button type="button" name="submit" id="submit">Submit</button>
+        <button type="button" name="submit" id="submit">Submit</button>
 
-        </form>
+    </form>
 
-    </main>
+</main>
 </body>
 </html>
