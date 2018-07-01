@@ -9,26 +9,31 @@ html,
 body {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+    line-height: 22px;
     color: var(--primary-text-color, black);
 }
 
 h1 {
     font-size: 32px;
+    line-height: 40px;
     text-align: center;
     margin-top: 80px;
 }
 
 h2 {
     font-size: 24px;
+    line-height: 30px;
     margin-top: 20px;
 }
 
 h3 {
     font-size: 18px;
+    line-height: 24px;
 }
 
 blockquote {
     font-size: 28px;
+    line-height: 40px;
     font-style: italic;
     text-align: center;
 }
