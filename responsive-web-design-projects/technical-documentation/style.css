@@ -13,17 +13,12 @@ nav {
     height: auto;
     margin: 10px;
     padding: 10px;
-    /* color: #00ffae; */
-    /* background: #98f2d5; */
-    /* border-radius: 3px; */
 }
 
 a {
     margin-top: 10px;
     line-height: 30px;
     color: #000;
-    /* border: 2px solid #00ffae; */
-    /* background: #00ffae; */
     text-decoration: underline #00ffae;
 }
 
@@ -46,7 +41,6 @@ header {
     font-size: 20px;
     font-style: italic;
     line-height: 24px;
-    /* text-decoration: underline #00ffae; */
 }
 
 code {
@@ -54,7 +48,6 @@ code {
     font-size: 16px;
     display: block;
     white-space: pre-wrap;
-    /* background: #c6f9ff; */
     background: #e1f7f4;
     padding: 30px;
 }
