@@ -72,7 +72,6 @@ nav {
 .welcome-content {
     color: var(--white-text-color);
     padding: 10px;
-    /* background: var(--transparent-white-color); */
 }
 
 .welcome-content a,
