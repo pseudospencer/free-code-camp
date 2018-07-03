@@ -17,7 +17,6 @@ h1 {
     font-size: 32px;
     line-height: 40px;
     text-align: center;
-    /* margin-top: 80px; */
 }
 
 h2 {
@@ -82,7 +81,6 @@ section {
 #nav-bar {
     float: right;
     margin-right: 20px;
-    /* background: yellow; */
 }
 
 nav a {
@@ -100,7 +98,6 @@ nav a {
 .section-content {
     max-width: 80%;
     margin: auto;
-    /* background: lightgreen; */
 }
 
 .column-container {
@@ -114,11 +111,9 @@ nav a {
     flex-basis: 50%;
     max-width: 48%;
     min-width: 300px;
-    /* flex: 1; */
 }
 
 .video-container {
-    /* margin: 40px auto 40px auto; */
     margin: auto;
     position: relative;
     padding-bottom: 56.25%; /*16:9*/
