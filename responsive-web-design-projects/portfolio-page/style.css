@@ -99,9 +99,10 @@ footer a {
     width: 45%;
     margin: 10px;
     padding: 10px;
-    border: 1px solid black;
-    border: 2px solid transparent;
+    border: 2px solid var(--main-bright-color);
+    /* border: 2px solid transparent; */
     border-image: linear-gradient(180deg, rgba(65,244,166,1) 0%, rgba(0,137,177,1) 100%);
+    border-image-width: 2px;
     border-image-slice: 1;
 }
 
@@ -113,8 +114,9 @@ footer a {
     width: 90%;
     max-width: 600px;
     border: 2px solid var(--main-bright-color);
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     border-image: linear-gradient(180deg, rgba(65,244,166,1) 0%, rgba(0,137,177,1) 100%);
+    border-image-width: 2px;
     border-image-slice: 1;
 }
 
@@ -126,11 +128,9 @@ footer a {
 
 footer {
     padding: 30px;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     background: linear-gradient(180deg, rgba(65,244,166,1) 0%, rgba(0,137,177,1) 100%);
 }
 
