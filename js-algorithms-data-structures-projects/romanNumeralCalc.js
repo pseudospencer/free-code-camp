@@ -2,8 +2,18 @@ function convertToRoman(num) {
     /*
     Converts int to roman numerals.
 
-    ** Only able to handle ints < 400,000 **
+    ** Only able to handle ints 1 - 399,999 **
     */
+
+    // handle errors
+    if (num >= 400000 || num < 1) {
+        console.error("convertToRoman is only able to handle integers between 1 and 400000, you passed" + str(num));
+        return false;
+    } else if ( num % 1 !== 0) {
+        console.error("convertToRoman is only able to handle whole numbers, you passed" + str(num));
+        return false;
+    }
+
     let numeralsKey = [
         ["I", "V"],            // Ones place:  1:"I", 5:"V"
         ["X", "L"],            // Tens place  10:"X", 50:"L"
@@ -12,14 +22,6 @@ function convertToRoman(num) {
         ["X\u0305", "L\u0305"], // Ten Thousands place: 10000: "X\u0305", 50000: "L\u0305"
         ["C\u0305"]             // Hundred Thousands place: 100000: "C\u0305"
     ];
-
-    if (num >= 400000) {
-        console.error("convertToRoman is only able to handle integers < 400000, you passed" + str(num));
-        return;
-    } else if ( num % 1 !== 0) {
-        console.error("convertToRoman is only able to handle whole numbers, you passed" + str(num));
-        return;
-    }
 
     // convert number to an array of single digits, representing each "place" value
     let places = num.toString().split('').reverse(); // array of single digits, reversed so that ones place comes first rather than last
