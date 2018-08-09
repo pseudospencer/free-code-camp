@@ -1,0 +1,24 @@
+<style type='text/sass'>
+  /* each loops through all of the items in a map or a list. */
+  @each $color in blue, black, red {
+    .#{$color}-bg {background-color: $color;}
+  }
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* map syntax:
+
+  $backgrounds(1: blue, 2: black, 3: red);
+  @each $key, $color in $backggrounds {
+      .#{$color}-bg {background-color: $color;}
+  }
+   
+  */
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
